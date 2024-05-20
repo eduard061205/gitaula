@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transformação</title>
+</head>
+
+<body style="background-color: rgb(194, 199, 199);">
+    <p><h1>NOME: Eduardo Rodrigues</h1></p>
+    <h1> TRANSFORMAÇÃO DE NÚMERO <br> DECIMAL PRA NÚMERO BINARIO</h1>
+    <hr>
+    
+    <label> <em>Número Decimal</em></label>
+    <input name="decimal" id="decimal_id" />
+    <button onclick="converte_binario()"> Converter</button>
+    <p> <mark> <em> Transformado em Número <label> Binario</label>
+    <input name="binario" id="binario_id" /> </em> </mark> </p>
+
+    <script>
+        function converte_binario(){
+            var decimal = document.getElementById("decimal_id").value;
+            var binario = decimal_binario(Number(decimal));
+            document.getElementById("binario_id").value = binario;
+        }
+
+        function decimal_binario(numero){    
+            if(numero < 2){
+                return numero.toString();
+            }
+            binario = "";
+            while(numero > 1){
+                resto = numero % 2;
+                binario = resto.toString()+binario;
+                numero = Math.floor(numero/2);
+            }
+            return numero.toString()+binario;
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+body{
+    background-color: blanchedalmond;
+    margin: 0px auto;
+    width: 600px;
+ }
+ #primeira_div{
+    background-color: rgb(100, 100, 100);
+    width: 200px;
+    float: left;
+ }
+
+ #segunda_div{
+    background-color: blue;
+    width: 200px;
+    float: left;
+ }
+
+.terceira_div{
+    width: 300px;
+    background-color: blueviolet;
+    float: left;
+}
+ 
